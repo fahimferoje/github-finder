@@ -54,7 +54,7 @@ class App extends Component {
 				<Navbar />
 
 				<div className="container">
-					<Alert alert={this.state.alert} />
+					 <Alert alert={this.state.alert} />
 					<Search
 						searchUsers={this.searchUsers}
 						clearUsers={this.clearUsers}
