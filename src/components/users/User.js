@@ -26,7 +26,6 @@ export class User extends Component {
             location,
             bio,
             blog,
-            login,
             html_url,
             followers,
             following,
