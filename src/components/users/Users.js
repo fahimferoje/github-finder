@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import UserItem from './UserItem';
 import Spinner from '../layout/Spinner';
+import GithubContext from '../../context/github/githubContext';
 
 
+const Users = () => {
 
-const Users = ({ users, loading }) => {
+	const githubContext = useContext(GithubContext);
+
+	const {loading, users} = githubContext;
 
 	const userStyle = {
 		display : 'grid',
